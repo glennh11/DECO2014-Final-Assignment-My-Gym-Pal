@@ -11,7 +11,7 @@ My Gym Pal is a single-page application (SPA) that allows users to generate a gy
 ## Version Control:
 This project uses git and github for managing new developments and track any changes made during the progression of the project. 
 
-See the github repository here: 
+See the github repository here: https://github.com/glennh11/DECO2014-Final-Assignment-My-Gym-Pal.git
 
 
 ## Features:
