@@ -28,3 +28,55 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('profile-section').classList.remove('hidden');
     });
 });
+
+function generateProgram(days, experience) {
+    let program = [];
+
+    if (days >= 6) {
+        program = [
+            { day: "Push", exercises: ["Barbell Bench Press", "Dumbbell Incline Bench Press", "Military Press", "Dumbbell Arnold Press", "Tricep Dips", "Tricep Push Downs", "Sit Ups"] },
+            { day: "Pull", exercises: ["Pull-Ups", "Deadlifts", "Seated Cable rows", "Bicep Curls", "Hammer Curls"] },
+            { day: "Legs", exercises: ["Squats", "Leg Press", "Lunges", "Hamstring Curls", "Leg Extensions"] },
+            { day: "Push", exercises: ["Incline Bench Press", "Machine Chest Fly", "Dumbbell Shoulder Press", "Lateral Raises", "Tricep Extensions", "Skull Crushers"] },
+            { day: "Pull", exercises: ["Barbell Rows", "Lat Pulldowns", "Machine low rows", "Ez Bar Curls", "Hammer Curls"] },
+            { day: "Legs", exercises: ["Deadlifts", "Bulgarian Split Squat", "Ha Curls", "Calf Raises"] }
+        ];
+    } else if (days == 5) {
+        program = [
+            { day: "Chest/Tris", exercises: ["Bench Press", "Dumbbell Incline Press", "Tricep Dips", "Chest Flyes", "Tricep Extensions"] },
+            { day: "Back/Bis", exercises: ["Pull-Ups", "Cable pull downs", "Barbell Rows", "Bicep Curls", "Cable Hammer Curls"] },
+            { day: "Legs", exercises: ["Squats", "Leg Press", "Lunges", "Romanian Deadlift"] },
+            { day: "Shoulders", exercises: ["Shoulder Press", "Lateral Raises", "Front Raises", "Rear-delt Raises"] },
+            { day: "Core/Cardio", exercises: ["Planks with up and down movement", "Crunches", "Mountain Climbers", "Roll outs"] }
+        ];
+    } else if (days == 4) {
+        program = [
+            { day: "Upper", exercises: ["Bench Press", "Pull-Ups", "Rows", "Shoulder Press", "Dumbbell Flyes"] },
+            { day: "Lower", exercises: ["Squats", "Deadlifts", "Lunges", "Hamstring Curls"] },
+            { day: "Upper", exercises: ["Incline Bench Press", "Lat Pulldowns", "Bicep Curls", "Tricep Extensions"] },
+            { day: "Lower", exercises: ["Leg Press", "Calf Raises", "Leg Extensions", "Hamstring Curls"] }
+        ];
+    } else if (days == 3) {
+        program = [
+            { day: "Full Body", exercises: ["Squats", "Bench Press", "Rows", "Overhead Press"] },
+            { day: "Full Body", exercises: ["Deadlifts", "Pull-Ups", "Lunges", "Bicep Curls"] },
+            { day: "Full Body", exercises: ["Leg Press", "Incline Bench Press", "Lat Pulldowns", "Tricep Extensions"] }
+        ];
+    } else if (days == 2) {
+        program = [
+            { day: "Full Body (Day 1)", exercises: ["Squats", "Bench Press", "Rows", "Overhead Press", "Tricep pushdown"] },
+            { day: "Full Body (Day 2)", exercises: ["Deadlifts", "Pull-Ups", "Lunges", "Bicep Curls"] }
+        ];
+    }
+
+    return program;
+}
+
+function displayProfile(name, age, gender, goals, days, weight) {
+    document.getElementById('profile-name').textContent = `Name: ${name}`;
+    document.getElementById('profile-age').textContent = `Age: ${age}`;
+    document.getElementById('profile-gender').textContent = `Gender: ${gender}`;
+    document.getElementById('profile-goals').textContent = `Fitness Goals: ${goals.join(', ')}`;
+    document.getElementById('profile-days').textContent = `Available Days: ${days.join(', ')}`;
+    document.getElementById('profile-weight').textContent = `Body Weight: ${weight}`;
+}
