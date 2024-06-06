@@ -112,3 +112,12 @@ and hierarchy of which exercises to complete first */
     padding: 10px;
     border-radius: 5px;
 }
+
+/* Styles for each respective exercise */
+.exercise-details {
+    margin-top: 10px;
+    background-color: #1e3a55;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
