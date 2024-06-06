@@ -1,0 +1,14 @@
+/* The main colour for the web application is called Whale Navy. THis colour is selected as darker tones formulate a
+calming environment, allowing users to focus on their programs. This colour also juxtaposes the intense environment
+in gyms, therefore allowing users to further enhance their focus in completing their routines. */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #102a3e;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: scroll; 
+}
