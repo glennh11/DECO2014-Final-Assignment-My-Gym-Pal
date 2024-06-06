@@ -90,3 +90,25 @@ Below is also the styles for the checkbox labels*/
     align-items: center;
     gap: 5px;
 }
+
+/* Profile styles, also included on the workouts and journey section */
+#profile-section, #workout-section, #journey-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* again using lists as a style for the workouts for cleanliness
+and hierarchy of which exercises to complete first */
+#workout-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#workout-section ul li {
+    margin: 10px 0;
+    background-color: #2d5b8a;
+    padding: 10px;
+    border-radius: 5px;
+}
