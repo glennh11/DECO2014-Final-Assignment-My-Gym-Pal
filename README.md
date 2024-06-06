@@ -1,4 +1,4 @@
-### DECO2014-Final-Assignment-My-Gym-Pal
+### DECO2017-Final-Assignment-My-Gym-Pal
 
 ### Made by 510474513, chui5688
 
@@ -42,3 +42,5 @@ The application uses localStorage to store data, therefore it is limited to the 
 
 ## Notes
 I understand and acknowledge the need to use gitHub throughout the progression of the assignment. I did not realise this which I take full responsibility of. My gitHub Repository demonstrates my efforts to include all the changes I made previously to the best of my memory. 
+
+I also named the folder DECO2014, my apologies. 
