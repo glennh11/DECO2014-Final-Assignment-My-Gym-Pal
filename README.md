@@ -38,3 +38,7 @@ Once the page is open, fill out the initial survey. As soon as you click continu
 
 ## Limitations
 The application uses localStorage to store data, therefore it is limited to the device and browser it is initially used in. If the application is opened on a different browser or device, the user's PR's aren't available there. 
+
+
+## Notes
+I understand and acknowledge the need to use gitHub throughout the progression of the assignment. I did not realise this which I take full responsibility of. My gitHub Repository demonstrates my efforts to include all the changes I made previously to the best of my memory. 
