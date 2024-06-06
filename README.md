@@ -30,8 +30,7 @@ No setup is required.
 
 ## Usage
 Two options to use the web applciation:
-1. View the website via the following URL: 
-2. Open the index.html file in your web browser
+1. Open the index.html file in your web browser
 
 Once the page is open, fill out the initial survey. As soon as you click continue your newly generated gym program will be available. You can check which days have what exercises and freely input what weight you completed for each set of the exercise. 
 
