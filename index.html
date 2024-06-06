@@ -8,16 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head> 
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Gym Pal</title>
-    <link rel="stylesheet" href="style.css">
-</head> 
-
 <body>
     <div class="container">
         <header>
@@ -43,3 +33,37 @@
                         <option value="male">Male</option>
                         <option value="other">Other</option>
                     </select>
+
+                    <label for="goals">Fitness goals:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="lose-weight" name="goals" value="Lose Weight">
+                        <label for="lose-weight">Lose Weight</label>
+                        <input type="checkbox" id="gain-strength" name="goals" value="Gain Strength">
+                        <label for="gain-strength">Gain Strength</label>
+                        <input type="checkbox" id="build-muscle" name="goals" value="Build Muscle">
+                        <label for="build-muscle">Build Muscle</label>
+                    </div>
+
+                    <label for="days">Schedule:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="monday" name="days" value="Monday">
+                        <label for="monday">Monday</label>
+                        <input type="checkbox" id="tuesday" name="days" value="Tuesday">
+                        <label for="tuesday">Tuesday</label>
+                        <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+                        <label for="wednesday">Wednesday</label>
+                        <input type="checkbox" id="thursday" name="days" value="Thursday">
+                        <label for="thursday">Thursday</label>
+                        <input type="checkbox" id="friday" name="days" value="Friday">
+                        <label for="friday">Friday</label>
+                        <input type="checkbox" id="saturday" name="days" value="Saturday">
+                        <label for="saturday">Saturday</label>
+                        <input type="checkbox" id="sunday" name="days" value="Sunday">
+                        <label for="sunday">Sunday</label>
+                    </div>
+
+                    <label for="weight">Body weight (KG):</label>
+                    <input type="number" id="weight" name="weight" required>
+                    <button type="submit">Continue</button>
+                </form>
+            </section>
