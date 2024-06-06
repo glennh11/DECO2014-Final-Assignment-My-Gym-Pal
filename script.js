@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         displayWorkoutNav(days, program);
         displayWorkoutOfDay(program[0]); // Display the first workout of the program by default
 
+        //saving profile to localStorage for Data persistence
         saveProfileToLocalStorage(name, age, gender, goals, days, weight);
 
         document.getElementById('survey-section').classList.add('hidden');
@@ -29,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function generateProgram(days, experience) {
+// This function will generate the program based on the survey and how many days are available
+function generateProgram(days) {
     let program = [];
 
     if (days >= 6) {
@@ -80,3 +82,11 @@ function displayProfile(name, age, gender, goals, days, weight) {
     document.getElementById('profile-days').textContent = `Available Days: ${days.join(', ')}`;
     document.getElementById('profile-weight').textContent = `Body Weight: ${weight}`;
 }
+
+function showExerciseDetails(exercise) {
+    document.getElementById(`details-${exercise}`).classList.toggle('hidden');
+}
+
+
+
+
