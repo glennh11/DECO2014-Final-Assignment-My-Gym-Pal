@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     loadProfileFromLocalStorage();
     loadProgressFromLocalStorage();
 
-    /* Declaring all relevant variables for the web application, this includes
-    the survey-form, and generating the program */
+    /* Declaring all relevant variables for the survey section and creating an eventListener
+    for when the user submits the survey */
     document.getElementById('survey-form').addEventListener('submit', function(event) {
         event.preventDefault();
 
@@ -15,14 +15,18 @@ document.addEventListener('DOMContentLoaded', function() {
         let goals = Array.from(document.querySelectorAll('input[name="goals"]:checked')).map(goal => goal.value);
         let days = Array.from(document.querySelectorAll('input[name="days"]:checked')).map(day => day.value);
 
+        /* Display the first workout of the program by default and generate the program 
+        furthermore displaying survey results in user profile and displaying the workout 
+        navigation as to which days the user is available */
         let program = generateProgram(days.length, experience);
         displayProfile(name, age, gender, goals, days, weight);
         displayWorkoutNav(days, program);
-        displayWorkoutOfDay(program[0]); // Display the first workout of the program by default
+        displayWorkoutOfDay(program[0]); 
 
         //saving profile to localStorage for Data persistence
         saveProfileToLocalStorage(name, age, gender, goals, days, weight);
-
+        
+        // The initial survey form will disappear when the eventListener is called upon
         document.getElementById('survey-section').classList.add('hidden');
         document.getElementById('workout-section').classList.remove('hidden');
         document.getElementById('journey-section').classList.remove('hidden');
@@ -83,9 +87,6 @@ function displayProfile(name, age, gender, goals, days, weight) {
     document.getElementById('profile-weight').textContent = `Body Weight: ${weight}`;
 }
 
-function showExerciseDetails(exercise) {
-    document.getElementById(`details-${exercise}`).classList.toggle('hidden');
-}
 
 
 
