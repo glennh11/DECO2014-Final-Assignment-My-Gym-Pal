@@ -169,6 +169,8 @@ and hierarchy of which exercises to complete first */
     display: none;
 }
 
+/* Including @media to create responsiveness throughout the whole web application to 
+create accessibility throughout all desktops and mobiles */
 @media (max-width: 768px) {
     body {
         flex-direction: column;
