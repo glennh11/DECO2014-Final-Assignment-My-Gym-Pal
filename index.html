@@ -8,25 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head> 
 
+<!-- the title for the web app displayed on the header
+        Notes for the header: ensure to text-align centre in CSS-->
 <body>
     <div class="container">
         <header>
             <h1>My Gym Pal</h1> 
             <div id="calendar"></div>
-        </header> <!-- the title for the web app displayed on the header
-        Notes for the header: ensure to text-align centre in CSS-->
+        </header> 
 
 <!--This code here below is the intial survey that users must complete, dependant on the response
         the application will provide a gym routine for the user to follow utilising JS "if" and "else if" functions-->
         <main id="main-content"> 
             <section id="survey-section">
                 <form id="survey-form">
+                    <!-- Users name - text input -->
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
+
+                    <!-- Users age - text input -->
                     <label for="age">Age:</label>
                     <input type="number" id="age" name="age" required>
-                    <label for="gender">Gender:</label>
 
+                    <!-- Users gender drop down options -->
+                    <label for="gender">Gender:</label>
                     <select id="gender" name="gender" required>
                         <option value="">Select</option>
                         <option value="female">Female</option>
@@ -34,6 +39,7 @@
                         <option value="other">Other</option>
                     </select>
 
+                    <!-- Users goals using checkbox input -->
                     <label for="goals">Fitness goals:</label>
                     <div class="checkbox-group">
                         <input type="checkbox" id="lose-weight" name="goals" value="Lose Weight">
@@ -44,6 +50,7 @@
                         <label for="build-muscle">Build Muscle</label>
                     </div>
 
+                    <!-- Days users are available using checkbox input-->
                     <label for="days">Schedule:</label>
                     <div class="checkbox-group">
                         <input type="checkbox" id="monday" name="days" value="Monday">
@@ -62,15 +69,18 @@
                         <label for="sunday">Sunday</label>
                     </div>
 
+                    <!-- Users Body weight using text input -->
                     <label for="weight">Body weight (KG):</label>
                     <input type="number" id="weight" name="weight" required>
+
                     <button type="submit">Continue</button>
                 </form>
             </section>
 
             <!--Workout section which provides the routine to the user-->
             <section id="workout-section" class="hidden">
-                <div id="workout-program"></div>
+                <h2 id="workout-day-title"></h2>
+                <ul id="workout-list"></ul>
             </section>
 
           <!--The journey section is where the data inputted by users will be stored to illustrate their weightlifting
