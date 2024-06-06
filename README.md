@@ -1,13 +1,40 @@
-# DECO2014-Final-Assignment-My-Gym-Pal
+### DECO2014-Final-Assignment-My-Gym-Pal
 
-Made by 510474513, chui5688
+### Made by 510474513, chui5688
 
-Project title: My Gym Pal
+### Project title: My Gym Pal
 
-Description: A fitness web-app for gym users to generate a gym routine based on their lifestyle. This app initially begins with a survey, where users enter their age, gender, work out availabilities etc. Based on these responses, the web app will generate a workout program that the user can follow. 
+## Description: 
+My Gym Pal is a single-page application (SPA) that allows users to generate a gym routine and program based on the days they are available to train. The applications main purpose is to provide a user a gym program and track their personal-records in each specific exercise they are given. It's build using HTML and JavaScript, and uses localStorage for data persistence. 
 
-The users are also able to input how much weight they have lifted for each exercise which will be logged and display their personal best in a section called My Journey. 
 
-NOTES: 
-- I understand the marking criteria includes the "Use of version control and GitHub for code repository hosting, with a thorough and well-organized commit history that reflects a high level of professionalism and attention to detail." I take full responsibility of not using GitHub for code repository hosting and demonstrating version control earlier. Apologies for any inconveniences and my inability to demonstrate a professional level of commit history. 
- 
+## Version Control:
+This project uses git and github for managing new developments and track any changes made during the progression of the project. 
+
+See the github repository here: 
+
+
+## Features:
+- **Initial Survey**: This initial survey determines the best gym program for the user to follow based on how many days there are available to complete weights training. 
+
+- **Gym Program**: Dependent on the days, the application will provide a gym program. For example, if the user is free 6 days a week, they will be given a push/pull/legs gym split, if the user is free for only 3 days, they will be given a full body split. 
+
+- **Exercise progression**: The application will track via localStorage the best weight lifted for each exercise the user completes and stores it in the "My Journey" section of the web application. 
+
+- **Data Persistence**: The application uses localStorage to store the maximum weight and personal record a user completes. When the user refreshes the page and or closes and reopens the browser, the application will still display the user PR's.
+
+
+## Setup
+No setup is required. 
+
+
+## Usage
+Two options to use the web applciation:
+1. View the website via the following URL: 
+2. Open the index.html file in your web browser
+
+Once the page is open, fill out the initial survey. As soon as you click continue your newly generated gym program will be available. You can check which days have what exercises and freely input what weight you completed for each set of the exercise. 
+
+
+## Limitations
+The application uses localStorage to store data, therefore it is limited to the device and browser it is initially used in. If the application is opened on a different browser or device, the user's PR's aren't available there. 
