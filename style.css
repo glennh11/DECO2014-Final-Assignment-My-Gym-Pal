@@ -144,3 +144,27 @@ and hierarchy of which exercises to complete first */
     border-radius: 5px;
     text-align: left;
 }
+
+/* Adding new styles in the exercise tables */
+.exercise-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.exercise-details th, .exercise-details td {
+    padding: 10px;
+    text-align: center;
+}
+
+.exercise-details th {
+    background-color: #2d5b8a;
+}
+
+.exercise-details td {
+    background-color: #3e5c7b;
+}
+
+.hidden {
+    display: none;
+}
