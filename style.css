@@ -11,7 +11,7 @@ body {
     align-items: flex-start;
     height: 100vh;
     overflow-y: scroll; 
-    
+
 }/* The body removes default margins and uses flexbox for its layout.
 The code below includes the styles for the main containers and header
 section. */
@@ -37,3 +37,31 @@ header {
     top: 0;
     z-index: 1000;
 }
+
+/* main content styles, utilising column to display the content 
+and information */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* The styles for the survey that users must complete when initially
+using the web application. The width is limited and again is displayed
+in column form to provide a cleaner and easily readable survey. */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
