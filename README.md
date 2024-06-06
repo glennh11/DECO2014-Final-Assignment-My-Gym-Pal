@@ -31,6 +31,7 @@ No setup is required.
 ## Usage
 Two options to use the web applciation:
 1. Open the index.html file in your web browser
+2. Open the folder on VS Code and use the Live Server extension to run the website
 
 Once the page is open, fill out the initial survey. As soon as you click continue your newly generated gym program will be available. You can check which days have what exercises and freely input what weight you completed for each set of the exercise. 
 
