@@ -103,14 +103,17 @@ function displayWorkoutNav(days, program) {
         // eventListener to display the workout for the day
         dayButton.addEventListener('click', () => {
             displayWorkoutOfDay(program[index]);
-            document.querySelectorAll('.day-button').forEach(btn => btn.classList.remove('active'));
-            dayButton.classList.add('active');
+            console.log('Day button clicked:', day); // Debug log
+            document.querySelectorAll('.day-button').forEach(btn => btn.classList.remove('.active-day'));
+            dayButton.classList.add('.active-day');
+            console.log('Active day button:', dayButton); // Debug log
         });
 
         navBar.appendChild(dayButton);
     });
 }
 
+//function to display the workout of the day
 function displayWorkoutOfDay(workout) {
     let workoutSection = document.getElementById('workout-section');
     document.getElementById('workout-day-title').textContent = `Workout for ${workout.day}`;
@@ -124,8 +127,6 @@ function displayWorkoutOfDay(workout) {
         template.querySelector('.exercise-button').dataset.exercise = exercise;
         template.querySelector('.exercise-details').id = `details-${exercise}`;
         template.querySelector('.log-button').dataset.log = exercise;
-
-        // Attach the showExerciseDetails event listener
         template.querySelector('.exercise-button').addEventListener('click', function() {
             showExerciseDetails(exercise);
         });

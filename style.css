@@ -52,6 +52,17 @@ header {
     z-index: 999;
 }
 
+/* implementing different colour when the active day is activated so users do not get confused 
+when viewing their workouts */
+.active-day {
+    background-color: #28a745;  
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
 #workout-nav button {
     background-color: #2d5b8a;
     border: none;
@@ -60,6 +71,7 @@ header {
     cursor: pointer;
     margin: 0 5px;
 }
+
 
 /* main content styles, utilising column to display the content 
 and information */
