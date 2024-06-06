@@ -92,6 +92,31 @@
                     <p id="profile-weight"></p>
                 </div>
             </section>
+
+            <!--Creating a template for the exercise tables. This is used to
+            provide the same table for each respective exercise and to simplify
+            the code-->
+            <template id="exercise-template">
+                <li>
+                    <button class="exercise-button" data-exercise=""></button>
+                    <div class="exercise-details hidden" data-details="">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Set</th>
+                                    <th>Weight (kg)</th>
+                                    <th>Reps</th>
+                                </tr>
+                            </thead>
+                            <tbody class="exercise-rows">
+                                <!-- using a forLoop the rows and table for the
+                                exercises will be inserted here -->
+                            </tbody>
+                        </table>
+                        <button class="log-button" data-log="">Log Exercise</button>
+                    </div>
+                </li>
+            </template>
         </main>
     </div>
     <script src="script.js"></script>
