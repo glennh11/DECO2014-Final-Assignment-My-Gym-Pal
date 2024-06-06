@@ -65,3 +65,28 @@ form label {
     margin-bottom: 5px;
 }
 
+/* Styles for the inputs in the survey, such as the select elements
+and buttons */
+form input[type="text"],
+form input[type="number"],
+form select,
+form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* This is for the checkboxes for the days that users must select
+Below is also the styles for the checkbox labels*/
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
